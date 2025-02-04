@@ -8,21 +8,25 @@
         .short {
             width: 50px;
             border: solid;
+            display: block;
         }
 
         .overflow {
-            /*Strategy 1 for long words: add scrollbars*/
-            overflow: auto;
+            /* Strategy 1 for long words: add scrollbars*/
+            /*overflow: auto;*/
 
-            /*Strategy 2: Just hide the overflow*/
+            /* Strategy 2: Just hide the overflow*/
             /*overflow: hidden;*/
+
+            /* Strategy 3: Allow to break stuff midword   */
+            overflow-wrap: break-word;
         }
     </style>
 </head>
 <body>
 <div class="container">
     <div class="short overflow">Thisisalongwordwhichdoesnotbreak</div>
-    <div class="short">This is along wordwh ichd oesnotb reak</div>
+    <div class="short">This is along wordwhatt ichd oesnotbaaaaaa reak</div>
 </div>
 </body>
 </html>
