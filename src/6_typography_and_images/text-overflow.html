@@ -19,7 +19,12 @@
             /*overflow: hidden;*/
 
             /* Strategy 3: Allow to break stuff midword   */
-            overflow-wrap: break-word;
+            /*overflow-wrap: break-word;*/
+
+            /* Strategy 4: Just hide the broken text behind ..*/
+            /* This will have a single line with ...*/
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     </style>
 </head>
