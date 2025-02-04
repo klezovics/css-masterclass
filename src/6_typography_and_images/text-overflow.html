@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Styles Example</title>
+    <style>
+        .short {
+            width: 50px;
+            border: solid;
+        }
+
+        .overflow {
+            /*Strategy 1 for long words: add scrollbars*/
+            overflow: auto;
+
+            /*Strategy 2: Just hide the overflow*/
+            /*overflow: hidden;*/
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="short overflow">Thisisalongwordwhichdoesnotbreak</div>
+    <div class="short">This is along wordwh ichd oesnotb reak</div>
+</div>
+</body>
+</html>
